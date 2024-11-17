@@ -1197,6 +1197,7 @@
   padding: 1rem;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.35s, box-shadow 0.35s;
 }
 .quick-preview .preview-card:hover {
