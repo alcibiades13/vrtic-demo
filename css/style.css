@@ -1943,6 +1943,107 @@
   color: #555;
 }
 
+.contact-page .page-header {
+  background-image: url("../images/page-bg/kontakt-ilustracija.jpg");
+}
+
+.contact-section {
+  padding: 2rem 0;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  color: #2c7472;
+  font-family: Forum, "Raleway", sans-serif, sans-serif;
+  margin-bottom: 2rem;
+}
+.contact-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .contact-section .row .col {
+    flex: 1 1 100%;
+  }
+}
+.contact-section .contact-details {
+  width: 22%;
+}
+.contact-section .employees {
+  width: calc(35% - 2rem);
+}
+.contact-section .contact-details,
+.contact-section .employees {
+  padding-top: 1.5rem;
+}
+.contact-section .contact-details p,
+.contact-section .employees p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.contact-section .contact-details p strong,
+.contact-section .employees p strong {
+  color: #9974a0;
+}
+.contact-section .contact-details p a,
+.contact-section .employees p a {
+  color: #665889;
+  text-decoration: none;
+}
+.contact-section .contact-details p a:hover,
+.contact-section .employees p a:hover {
+  text-decoration: underline;
+}
+.contact-section .contact-form {
+  width: 38%;
+  padding: 1.5rem;
+  align-self: flex-start;
+  background-color: #ebedf5;
+}
+.contact-section .contact-form form .form-group {
+  margin-bottom: 1.5rem;
+}
+.contact-section .contact-form form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #888;
+}
+.contact-section .contact-form form .form-group input,
+.contact-section .contact-form form .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ebedf5;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #888;
+}
+.contact-section .contact-form form .form-group textarea {
+  height: 150px;
+  resize: none;
+}
+.contact-section .contact-form form .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #9974a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-section .contact-form form .btn:hover {
+  background-color: #494064;
+}
+.contact-section .map-container {
+  margin-top: 2rem;
+}
+.contact-section .map-container iframe {
+  display: block;
+  border: none;
+}
+
 .organizational-structure {
   background-color: #fdfdfd;
   font-family: "Montserrat", sans-serif;
