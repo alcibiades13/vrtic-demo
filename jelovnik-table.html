@@ -1,0 +1,125 @@
+    
+    <style>
+                .meal-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-family: $font-primary;
+                    font-size: $font-size-base;
+                    color: $dark-text;
+
+                    thead {
+                        tr {
+                            .day-header {
+                                background-color: $grey-700;
+                                color: $white;
+                                padding: $space-sm $space-md;
+                                text-align: left;
+                                font-weight: bold;
+                            }
+
+                            .meal-type {
+                                padding: $space-sm $space-md;
+                                font-weight: bold;
+                                color: $white;
+                                text-align: left;
+
+                                // Color coding for meal types
+                                &.breakfast {
+                                    background-color: $teal-400;
+                                }
+                                &.snack {
+                                    background-color: $yellow-400;
+                                }
+                                &.lunch {
+                                    background-color: $orange-400;
+                                }
+                                &.afternoon-snack {
+                                    background-color: $red-400;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            .day {
+                                background-color: $grey-600;
+                                border-bottom: 1px solid $dark-grey;
+                                padding: $space-sm $space-md;
+                                font-weight: bold;
+                                color: $white;
+                                width: 10%; // Adjust width as needed
+                                text-align: left;
+                            }
+
+                            td {
+                                padding: $space-sm $space-md;
+                                border-bottom: 1px solid $purple-100;
+                                border-right: 1px solid $purple-100;
+                                background-color: $purple-50;
+                                font-weight: 500;
+                            }
+
+                            // Optional hover effect for rows
+                            &:hover {
+                                background-color: $light-grey-200;
+                            }
+                        }
+                    }
+                }
+              </style>
+              
+              
+              <table class="meal-table">
+                            <thead>
+                                <tr>
+                                    <th class="day-header">Дан</th> <!-- Day header column -->
+                                    <th class="meal-type breakfast">Доручак</th>
+                                    <th class="meal-type snack">Ужина</th>
+                                    <th class="meal-type lunch">Ручак</th>
+                                    <th class="meal-type afternoon-snack">Поподневна ужина</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Monday -->
+                                <tr>
+                                    <th class="day">Понедељак</th>
+                                    <td>Јогурт, каша</td>
+                                    <td>Јабука</td>
+                                    <td>Пилеће месо, пиринач, салата</td>
+                                    <td>Кекс, млеко</td>
+                                </tr>
+                                <!-- Tuesday -->
+                                <tr>
+                                    <th class="day">Уторак</th>
+                                    <td>Кроасан, млеко</td>
+                                    <td>Наранџа</td>
+                                    <td>Ћуфте, кромпир</td>
+                                    <td>Вафли, сок</td>
+                                </tr>
+                                <!-- Wednesday -->
+                                <tr>
+                                    <th class="day">Среда</th>
+                                    <td>Житарице са млеком</td>
+                                    <td>Банана</td>
+                                    <td>Риба, пире кромпир, купус салата</td>
+                                    <td>Воћни јогурт</td>
+                                </tr>
+                                <!-- Thursday -->
+                                <tr>
+                                    <th class="day">Четвртак</th>
+                                    <td>Палачинке са сиром</td>
+                                    <td>Крушка</td>
+                                    <td>Пасуљ са месом, салата</td>
+                                    <td>Мафини</td>
+                                </tr>
+                                <!-- Friday -->
+                                <tr>
+                                    <th class="day">Петак</th>
+                                    <td>Хлеб, путер, мед</td>
+                                    <td>Јабука</td>
+                                    <td>Спанаћ, пиринач, пилетина</td>
+                                    <td>Смути од воћа</td>
+                                </tr>
+                            </tbody>
+                        </table>

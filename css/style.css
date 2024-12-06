@@ -159,6 +159,28 @@
   height: 100%;
 }
 
+.row {
+  display: flex;
+  gap: 2rem;
+}
+
+.col-6 {
+  flex: 1;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.text-italic {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .header {
   background-color: #665889;
   height: 100px;
@@ -402,25 +424,25 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
-  gap: 3rem;
+  padding: 0 2rem 1.5rem;
+  gap: 1.5rem;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 .mission .container .text-content, .vision .container .text-content {
-  flex: 3;
+  flex: 4;
   padding: 2rem;
   border-radius: 25px;
 }
 .mission .container .text-content p, .vision .container .text-content p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 1.5rem;
-  color: #333333;
 }
 .mission .container .image-content, .vision .container .image-content {
-  flex: 2;
+  flex: 3;
+  margin-top: 5.5rem;
+  padding-top: 3rem;
 }
 .mission .container .image-content img, .vision .container .image-content img {
   width: 100%;
@@ -433,6 +455,40 @@
 }
 .vision .container {
   background-image: linear-gradient(to right, #d7d9eb, #dae8d6);
+}
+.vision .container .image-content {
+  text-align: right;
+}
+
+.mv-cards {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mv-card {
+  background-color: #f8f8fa;
+  background-color: #9974a0;
+  color: white;
+  padding: 1rem;
+  width: calc(50% - 0.5rem);
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+.mv-card:nth-of-type(3) {
+  width: calc(100% - 0.5rem);
+}
+.mv-card:nth-of-type(2) {
+  background-color: #647d84;
+}
+.mv-card:nth-of-type(3) {
+  background-color: #597290;
+}
+.mv-card:nth-of-type(4) {
+  background-color: #a66489;
+}
+.mv-card:nth-of-type(5) {
+  background-color: #665889;
 }
 
 .partners {
@@ -889,7 +945,7 @@
   margin-bottom: 1rem;
 }
 .vrtici-page .vrtic-info p {
-  font-size: 18px;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 0.5rem;
 }
@@ -915,6 +971,223 @@
   border-radius: 50%;
   border: 10px solid #efecdd;
   z-index: 11;
+}
+
+.kolibri-vrtic-page .page-header {
+  background-image: url("../images/page-bg/kolibri-ilustracija.jpg");
+}
+
+.pcelica-vrtic-page .page-header {
+  background-image: url("../images/page-bg/pcelica-ilustracija-3.jpg");
+}
+
+.lane-vrtic-page .page-header {
+  background-image: url("../images/page-bg/lane-ilustracija-2.jpg");
+}
+
+.decja-radost-vrtic-page .page-header {
+  background-image: url("../images/page-bg/decja-radost-ilustracija.jpg");
+}
+
+.object-page {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+.object-page .object-name {
+  font-size: 3rem;
+  color: #a66489;
+  font-family: Forum, "Raleway", sans-serif;
+}
+.object-page .object-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+.object-page .object-images img {
+  flex: 1;
+  max-width: calc(33% - 0.5rem);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+.object-page .object-info {
+  display: flex;
+  justify-content: space-around;
+  background: #4b527d;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.object-page .object-info .info-card {
+  flex: 1;
+  margin: 0 0.5rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.object-page .object-info .info-card i {
+  font-size: 1.25rem;
+  color: #4b527d;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f9d5a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.object-page .object-info .info-card .info-title {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.object-page .object-info .info-card .info-content {
+  margin-top: 0.25rem;
+  color: #f8f8fa;
+}
+.object-page .object-groups {
+  margin: 3rem 0;
+}
+.object-page .object-groups .groups-title {
+  font-size: 1.5rem;
+  color: black;
+}
+.object-page .object-groups .groups-table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+.object-page .object-groups .groups-table th, .object-page .object-groups .groups-table td {
+  border: 1px solid #fdfdfd;
+  padding: 0.5rem;
+  text-align: center;
+}
+.object-page .object-groups .groups-table th {
+  background: #a66489;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 10px;
+}
+.object-page .object-groups .groups-table th.number {
+  background-color: #ebedf5;
+  color: black;
+}
+.object-page .object-groups .groups-table td {
+  background: #fdfdfd;
+  border-color: #f8d2e7;
+}
+
+.facility-info {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.facility-info .facility-header {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-left: 5px solid #89c4c2;
+  background-color: #e0f0f0;
+  text-align: left;
+}
+.facility-info .facility-header h2 {
+  font-size: 1.25rem;
+  color: #2c7472;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.facility-info .facility-header p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  color: black;
+}
+.facility-info .facility-details {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.facility-info .facility-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #50636a;
+}
+.facility-info .facility-details p {
+  line-height: 1.5;
+  text-align: left;
+}
+.facility-info .facility-details ul {
+  list-style: disc;
+  margin-left: 2rem;
+  text-align: left;
+}
+.facility-info .facility-details ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #666;
+}
+.facility-info .employee-structure {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.facility-info .employee-structure h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #50636a;
+}
+.facility-info .employee-structure p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+.facility-info .employee-structure ol {
+  margin-left: 2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.facility-info .employee-structure ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.object-navigation {
+  background-color: #f4faef;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #f2f2f2 h3;
+  border-top-font-size: 1.5rem;
+  border-top-margin-bottom: 2rem;
+  border-top-color: #9974a0;
+}
+.object-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.object-navigation ul li a {
+  text-decoration: none;
+  color: #53697e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.object-navigation ul li a:hover {
+  color: #665889;
+}
+.object-navigation ul li.current a {
+  color: #8F83AF;
+  text-decoration: underline;
 }
 
 .article {
@@ -977,7 +1250,7 @@
   margin-bottom: 2rem;
 }
 .article-page .article .activity-text p {
-  font-size: 18px;
+  font-size: 1rem;
   color: #666;
   margin-bottom: 1rem;
 }
@@ -1015,7 +1288,7 @@
   padding: 0.5rem 1rem;
   border-radius: 0 0 0 0.5rem;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .article-page .article .social-sharing {
@@ -1045,60 +1318,8 @@
 }
 
 .jelovnik-page .page-header {
-  background-image: url("../images/jelovnik-ilustracija.jpeg");
-  background-position: center -450px;
-}
-
-.meal-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: #333333;
-}
-.meal-table thead tr .day-header {
-  background-color: #565a63;
-  color: white;
-  padding: 1rem 1.5rem;
-  text-align: left;
-  font-weight: bold;
-}
-.meal-table thead tr .meal-type {
-  padding: 1rem 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-}
-.meal-table thead tr .meal-type.breakfast {
-  background-color: #89c4c2;
-}
-.meal-table thead tr .meal-type.snack {
-  background-color: #f0d9a3;
-}
-.meal-table thead tr .meal-type.lunch {
-  background-color: #f9d5a5;
-}
-.meal-table thead tr .meal-type.afternoon-snack {
-  background-color: #f4a2a2;
-}
-.meal-table tbody tr .day {
-  background-color: #647d84;
-  border-bottom: 1px solid #666;
-  padding: 1rem 1.5rem;
-  font-weight: bold;
-  color: white;
-  width: 10%;
-  text-align: left;
-}
-.meal-table tbody tr td {
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid #BCB4CF;
-  border-right: 1px solid #BCB4CF;
-  background-color: #f8f8fa;
-  font-weight: 500;
-}
-.meal-table tbody tr:hover {
-  background-color: #f8f8f8;
+  background-image: url("../images/page-bg/jelovnik-sto-ilustracija.jpg");
+  background-position: center bottom;
 }
 
 .menu-benefits {
@@ -1112,44 +1333,46 @@
   color: #a66489;
   font-family: Forum;
 }
+.menu-benefits .intro-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
 .menu-benefits .cards-container {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.menu-benefits .card {
+.menu-benefits .cards-container .card {
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(33% - 1.5rem);
-  min-width: 280px;
-  text-align: center;
+  flex: 1 1 calc(50% - 1.5rem);
+  max-width: 600px;
+  display: flex;
 }
-.menu-benefits .card h3 {
+.menu-benefits .cards-container h3 {
   color: #333333;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.menu-benefits .card p {
+.menu-benefits .cards-container p {
   color: #666;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
-.menu-benefits .card .card-icon {
-  margin-bottom: 1rem;
+.menu-benefits .cards-container .card-icon {
+  margin-right: 2rem;
+  flex-shrink: 0;
 }
-.menu-benefits .card .card-icon img {
-  width: 80px;
-  height: 80px;
+.menu-benefits .cards-container .card-icon img {
+  width: 140px;
+  height: 140px;
   border-radius: 8px;
-}
-.menu-benefits .card:hover {
-  background-color: #e0f0f0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
 }
 
 .jelovnik-food-images {
@@ -1195,7 +1418,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 1rem;
-  text-align: center;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.35s, box-shadow 0.35s;
@@ -1211,7 +1433,7 @@
   border-radius: 0.5rem;
 }
 .quick-preview .preview-card .preview-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0.5rem;
   color: #a66489;
@@ -1232,6 +1454,21 @@
 .quick-preview .yellow-card {
   border-color: #f0d9a3;
   box-shadow: rgba(240, 217, 163, 0.5) 0px 7px 29px 0px;
+}
+
+.quick-preview-text {
+  position: relative;
+  padding-right: 3rem;
+}
+.quick-preview-text ::after {
+  content: "\f101";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  font-size: 20px;
+  color: #a66489;
+  font-display: swap;
 }
 
 .enrollment-page .page-header {
@@ -1307,6 +1544,151 @@
     margin-top: 1.5rem;
   }
 }
+.ritam-dana-page .page-header {
+  background-image: url("../images/page-bg/ritam-dana-ilustracija.jpg");
+}
+
+.daily-routine {
+  background-color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+}
+.daily-routine .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.daily-routine .intro-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.daily-routine .intro-section .intro-img {
+  max-width: 40%;
+}
+.daily-routine .intro-section .intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.daily-routine .intro-section .description {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.daily-routine .routine-schedule .schedule-title {
+  font-size: 1.5rem;
+  color: #774862;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.daily-routine .routine-schedule .schedule-title.align-left {
+  text-align: left;
+}
+.daily-routine .routine-schedule .schedule-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-grid-col {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 1rem);
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-grid-col .p-wrapper {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-grid-col .description {
+  margin-bottom: 1rem;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  border-bottom: 1px solid #ebedf5;
+  width: 100%;
+  gap: 1.5rem;
+  align-items: center;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-item .schedule-icon {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-item i {
+  font-size: 1.875rem;
+  color: #9974a0;
+  max-width: 34px;
+  width: 34px;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-item .schedule-time {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c17d7d;
+  margin-bottom: 0.5rem;
+}
+.daily-routine .routine-schedule .schedule-grid .schedule-item .schedule-activity {
+  font-size: 1rem;
+  color: #333333;
+}
+.daily-routine .description {
+  line-height: 1.5;
+}
+
+.programi-rada-page .page-header {
+  background-image: url("../images/page-bg/programi-rada-ilustracija.jpg");
+}
+
+.programi-rada {
+  background-color: #f8f8f8;
+}
+.programi-rada .programi-rada-title {
+  font-family: Forum, "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #a66489;
+  margin-bottom: 2rem;
+}
+.programi-rada .programi-rada-section {
+  margin-bottom: 3rem;
+}
+.programi-rada .programi-rada-section .programi-rada-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: #50636a;
+  margin-bottom: 1.5rem;
+  background-color: #dae8d6;
+  color: black;
+  padding: 10px 1.5rem;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.programi-rada .programi-rada-section .programi-rada-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.programi-rada .programi-rada-section .programi-rada-list {
+  list-style: none;
+  padding: 0;
+}
+.programi-rada .programi-rada-section .programi-rada-list li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.programi-rada .programi-rada-section .programi-rada-list li strong {
+  color: #2c7472;
+}
+
 .public-procurement-page .page-header {
   background-image: url("../images/page-bg/javne-nabavke.jpg");
 }
@@ -1343,7 +1725,7 @@
 }
 .procurement-documents .document-list li a {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #50636a;
   text-decoration: none;
   display: flex;
@@ -1359,14 +1741,221 @@
   color: #565a63;
 }
 
+.sluzbe-page .page-header {
+  background-image: url("../images/page-bg/sluzbe-ilustracija.jpg");
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+}
+.layout .main-content {
+  flex: 7;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.layout .sidebar {
+  padding: 0;
+  border-radius: 1rem;
+}
+.layout .sidebar.sluzbe-sidebar {
+  background-color: transparent;
+}
+.layout .sidebar .tabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.layout .sidebar .tabs ul li .tab-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: black;
+  background-color: #f8f8fa;
+  border-bottom: 1px solid #d7d9eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+.layout .sidebar .tabs ul li .tab-link:hover {
+  background-color: #8F83AF;
+  color: white;
+}
+.layout .sidebar .tabs ul li .tab-link.active {
+  border-left: 3px solid #a66489;
+  color: #597290;
+}
+.layout .sidebar .tabs ul li .tab-link.active:hover {
+  color: white;
+}
+
+.page .text-content {
+  display: block;
+}
+.page .text-content h2 {
+  font-size: 2.5rem;
+  color: #a66489;
+  font-family: Forum, "Montserrat", sans-serif;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 1rem;
+}
+.page .text-content .principles-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.page .text-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+.page .text-content ul li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+.page .text-content p {
+  margin-bottom: 1rem;
+  color: black;
+  line-height: 1.8;
+}
+.page .text-content .service-subtitle {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.page .text-content .service-list {
+  padding-left: 18px;
+}
+.page .text-content .service-list li {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.page .text-content .contact-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e0f0f0;
+  border: 1px solid #89c4c2;
+  border-radius: 0.5rem;
+}
+.page .text-content .contact-info h4 {
+  margin-bottom: 1rem;
+  color: #486962;
+}
+.page .text-content .contact-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: black;
+}
+.page .text-content .contact-info p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.page .text-content .contact-info p a {
+  color: #50636a;
+  text-decoration: underline;
+}
+.page .text-content .contact-info p a:hover {
+  color: #2c7472;
+}
+
+.istorijat-page .page-header {
+  background-image: url("../images/page-bg/istorijat-ilustracija.jpg");
+}
+
+.istorijat {
+  background-color: #f8f8fa;
+  padding: 2rem 1.5rem;
+}
+.istorijat .istorijat-content {
+  display: flex;
+  gap: 2rem;
+}
+.istorijat .istorijat-content .istorijat-text {
+  flex: 5;
+  padding-right: 2rem;
+}
+.istorijat h1 {
+  font-family: Forum, "Montserrat", sans-serif, sans-serif;
+  font-size: 2.5rem;
+  color: #a66489;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.istorijat p {
+  font-family: "Raleway", sans-serif, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.istorijat blockquote {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: black;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  line-height: 1.8;
+  margin: 1.5rem 0;
+}
+.istorijat .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.timeline {
+  flex: 1;
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #ccc;
+  align-self: flex-start;
+  padding-top: 6rem;
+}
+.timeline .node {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.timeline .node:before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f4a2a2;
+  border-radius: 50%;
+}
+.timeline .node .date {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c7be5;
+  margin-bottom: 0.5rem;
+}
+.timeline .node .event {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
 .organizational-structure {
   background-color: #fdfdfd;
   font-family: "Montserrat", sans-serif;
 }
 .organizational-structure .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   text-align: center;
+}
+.organizational-structure .content-wrapper {
+  display: flex;
+  justify-content: center;
 }
 .organizational-structure .page-header {
   background-image: url("../images/page-bg/organizacija-ustanove.jpg");
@@ -1379,33 +1968,76 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #ebedf5;
+  background-image: linear-gradient(to bottom, #f8f8f8, #fdfdfd);
 }
 .organizational-structure .structure-column img {
   width: 180px;
   height: auto;
+  border-radius: 8px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
-.organizational-structure .structure-column .structure-number {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #a66489;
+.organizational-structure .structure-column .structure-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333333;
   margin-bottom: 3rem;
   margin-top: 1rem;
-  white-space: nowrap;
 }
-.organizational-structure .structure-column .structure-description {
-  font-size: 2.25rem;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  color: #a8c191;
-  width: 80px;
-  height: 80px;
+.organizational-structure .structure-column .structure-number {
+  font-size: 1.675rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #647d84;
+  width: 100%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #a66489;
-  padding-bottom: 6px;
+  background-color: #ebedf5;
+  padding-bottom: 4px;
+}
+
+.organization-content {
+  text-align: left;
+  margin-top: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+.organization-content h2 {
+  font-size: 2rem;
+}
+
+.table {
+  width: 100%; /* Make the table responsive */
+  border-collapse: collapse; /* Remove spacing between table cells */
+  margin-top: 20px; /* Add some space above the table */
+  font-family: "Arial", sans-serif; /* Use a clean font */
+  font-size: 16px;
+  color: #333;
+}
+.table th, .table td {
+  padding: 12px 15px; /* Add padding to cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Add a light border */
+}
+.table th {
+  background-color: #f4f4f4; /* Add a light background to header */
+  font-weight: bold; /* Bold font for headers */
+}
+.table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background for readability */
+}
+.table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+section.working-hours-table {
+  margin: 2rem 0; /* Center the section */
+  max-width: 800px; /* Limit the width of the table */
+  padding: 0;
 }
 
 * {
