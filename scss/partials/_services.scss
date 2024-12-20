@@ -1,0 +1,151 @@
+.sluzbe-page .page-header {
+  background-image: url("../images/page-bg/sluzbe-ilustracija.jpg");
+}
+
+.layout {
+  display: flex;
+  gap: $space-lg;
+
+  .main-content {
+    flex: 7;
+    padding: $space-lg;
+    background-color: $light-grey-400;
+    border-radius: $space-sm;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar {
+    // flex: 0 0 250px;
+    padding: 0;
+    border-radius: $space-sm;
+
+    &.sluzbe-sidebar {
+        background-color: transparent;
+    }
+
+    .tabs {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+        //   margin-bottom: $space-sm;
+
+          .tab-link {
+            display: block;
+            padding: $space-sm $space-md;
+            color: $black;
+            background-color: $purple-50;
+            // border-radius: $space-xs;
+            border-bottom: 1px solid $blue-200;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: $font-secondary;
+            // text-align: center;
+            line-height: 1.5;
+
+            &:hover {
+              background-color: $purple-200;
+              color: $white;
+            }
+
+            &.active {
+            //   background-color: $teal-600;
+                border-left: 3px solid $pink-600;
+              color: $blue-600;
+
+              &:hover {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page .text-content {
+  display: block;
+
+  h2 {
+      font-size: $font-size-xxl;
+      color: $pink-600;
+      font-family: Forum, $font-primary;
+      margin-bottom: $space-md;
+      border-bottom: 2px solid #d9d9d9;
+      padding-bottom: $space-sm;
+  }
+
+  .principles-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: 0;
+  }
+
+  ul {
+      list-style: disc;
+      padding-left: $space-md;
+      margin-bottom: $space-md;
+      margin-top: $space-xs;
+
+      li {
+      margin-bottom: $space-sm;
+      line-height: 1.5;
+      color: $black;
+      }
+  }
+
+  p {
+      margin-bottom: $space-sm;
+      color: $black;
+      line-height: 1.8;
+  }
+
+  .service-subtitle {
+      line-height: 1.5;
+      margin-bottom: $space-sm;
+  }
+
+  .service-list {
+      padding-left: 18px;
+
+      li {
+          line-height: 1.5;
+          margin-bottom: $space-xs;
+      }
+  }
+
+  .contact-info {
+      margin-top: $space-md;
+      padding: $space-sm;
+      background-color: $teal-100;
+      border: 1px solid $teal-400;
+      border-radius: $space-xs;
+
+      h4 {
+        margin-bottom: $space-sm;
+        color: $teal-700;
+      }
+
+      p {
+      margin: 0;
+      line-height: 1.6;
+      color: $black;
+
+      &:not(:last-child) {
+          margin-bottom: $space-sm;
+      }
+
+      a {
+          color: $teal-600;
+          text-decoration: underline;
+
+          &:hover {
+          color: $teal-800;
+          }
+      }
+    }
+  }
+}

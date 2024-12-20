@@ -1,0 +1,64 @@
+.pravila-ponasanja {
+    background-image: linear-gradient(to right, $white 0%, $white 50%, $purple-50 50%, $purple-50 100%);
+
+    .grid-container {
+        display: flex;
+        gap: $space-xxl;
+
+        .title {
+            font-size: $font-size-xl;
+            text-align: left;
+
+            .highlight {
+                color: $blue-600;
+                font-family: Forum, $font-primary, sans-serif;
+                // text-transform: uppercase;
+                // font-size: $font-size-xxl;
+                font-style: italic;
+            }
+        }
+
+        .col-6 {
+            flex: 1;
+        }
+    }
+}
+
+.behavior-code {
+
+
+    h3 {
+        color: $teal-600;
+        margin-bottom: $space-md;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: $space-lg;
+
+        li {
+            line-height: 1.5;
+            margin-bottom: $space-xs;
+        }
+    }
+    p {
+        line-height: 1.5;
+    }
+    .signature {
+        margin-top: $space-lg;
+    }
+    
+
+    .content-intro {
+        background-color: lighten($green-200, 5%);
+        border: 1px solid $green-400;
+        display: inline-block;
+        padding: $space-md;
+        list-style-position: inside;
+        margin-bottom: $space-lg;
+
+        li {
+            margin: $space-xs 0;
+        }
+    }
+}

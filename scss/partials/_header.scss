@@ -1,0 +1,125 @@
+// Header Styling
+.header {
+  background-color: $purple-400; // Light background for the header
+  // background-color: $purple-500;
+  height: 100px;
+  width: 100%;
+//   background-image: linear-gradient(to right, $teal-200, $blue-200, $pink-200);
+    // background-color: transparent;
+    position: fixed;
+    box-shadow: 0 10px 10px -10px rgba(33, 35, 38, .1);
+    border-bottom: 1px solid $purple-200;
+    z-index: 999; 
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: $space-md;
+  }
+
+  .header-nav {
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+
+      .nav-item {
+        position: relative;
+
+        a {
+          font-family: $font-secondary;
+          font-size: $font-size-sm; // Navigation link font size
+          color: $light-grey; // Dark color for navigation text
+          text-decoration: none;
+          font-weight: 600;
+          text-transform: uppercase;
+          padding: 1rem; // Padding for navigation items
+        }
+
+        // Dropdown Menu
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 150%;
+          right: 0;
+          background-color: $purple-600; // Light background for dropdown
+          list-style: none;
+          padding: 0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+          li {
+            width: 100%;
+
+            a {
+              font-size: $font-size-sm; // Navigation link font size
+              color: $light-grey; // Dark color for dropdown text
+              text-decoration: none;
+              white-space: nowrap;
+              width: 100%;
+              display: block;
+              padding: 0.75rem 1.5rem;
+              border-bottom: 1px solid $purple-400;
+              
+              &:hover {
+                color: $yellow-300;
+              }
+            }
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            top: -10px; /* Position the triangle above the dropdown */
+            right: 30px;
+            transform: translateX(-50%); /* Center the triangle */
+            border-left: 8px solid transparent; /* Half of the triangle's width */
+            border-right: 8px solid transparent; /* Half of the triangle's width */
+            border-bottom: 10px solid $purple-600; /* The color of the triangle */
+          }
+        }
+
+        // Show dropdown on hover
+        &:hover .dropdown-menu {
+          display: block;
+        }
+
+        &:not(.has-dropdown):hover > a {
+            color: $yellow-300; 
+        }
+      }
+    }
+  }
+}
+
+
+
+.hamburger {
+  display: none; // Hide by default
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: $dark-text; // Use dark text color
+    margin: 3px 0; // Space between lines
+    transition: all 0.3s ease;
+  }
+}
+
+// Responsive design for hamburger menu
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; // Show hamburger icon on small screens
+  }
+
+  .header-nav {
+    display: none; // Hide nav initially
+  }
+
+  .header-nav.active {
+    display: block; // Show nav when active
+  }
+}

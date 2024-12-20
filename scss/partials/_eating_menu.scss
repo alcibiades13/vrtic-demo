@@ -1,0 +1,103 @@
+.jelovnik-page {
+
+    .page-header {
+        background-image: url("../images/page-bg/jelovnik-sto-ilustracija.jpg");
+        background-position: center bottom;
+    }
+}
+
+
+.menu-benefits, .rules-overview {
+    // background-color: $light-grey;
+    padding: $space-lg 0;
+    margin-bottom: $space-lg;
+
+    h2 {
+        text-align: center;
+        font-size: $font-size-xxl;
+        margin-bottom: $space-md;
+        color: $pink-600;
+        font-family: Forum;
+    }
+
+    .intro-text {
+        // max-width: 800px;
+        margin-top: $space-sm;
+        margin-bottom: $space-xl;
+        line-height: 1.5;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        justify-content: center;
+        gap: $space-md;
+        flex-wrap: wrap;
+        margin-top: $space-sm;
+
+    .card {
+        background-color: $white;
+        padding: $space-md;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(50% - $space-md);
+        max-width: 600px;
+        display: flex;
+    }
+
+        h3 {
+            color: $dark-text;
+            font-size: $font-size-md;
+            margin-bottom: $space-sm;
+        }
+
+        p {
+            color: $dark-grey;
+            font-size: $font-size-base;
+            line-height: 1.5;
+        }
+
+        .card-icon {
+            margin-right: $space-lg;
+            flex-shrink: 0;
+
+            img {
+                width: 140px;
+                height: 140px;
+                border-radius: 8px;
+            }
+        }
+
+    }
+}
+
+.jelovnik-food-images {
+  margin-top: $space-lg; // Adjust this as per your design spacing needs
+  
+  .food-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    // padding: $space-sm;
+    height: 180px;
+    margin-top: $space-xxl;
+  }
+
+    img {
+      height: 100%;
+      width: auto;
+      border-radius: 5px; // Optional: rounded corners for the food images
+      margin: 0 2px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+ }

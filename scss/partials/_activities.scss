@@ -1,0 +1,195 @@
+.activities-page {
+  font-family: $font-primary;
+  background-color: $light-grey;
+  background-color: $warm-300;
+  color: $dark-text;
+
+  .activities-header {
+    text-align: center;
+    margin-bottom: $space-lg;
+
+    h1 {
+      font-size: $font-size-xxl;
+      color: $teal-600;
+    }
+
+    p {
+      font-size: $font-size-md;
+      color: $dark-grey;
+    }
+  }
+
+  .page-header {
+    background-image: url("../images/page-bg/knjiga-sa-obavestenjima.jpeg");
+  }
+
+  .activities-content {
+    display: flex;
+    gap: $space-lg;
+
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // First three cards in a grid
+        gap: $space-sm;
+        width: 70%;
+
+        .activity-card {
+            background-color: $purple-50;
+            // border: 1px solid $light-grey-400;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+
+            // Style for first three cards
+            &:nth-child(-n+3) {
+            grid-column: span 1; // Each takes up one column in a three-column layout
+                .activity-image {
+                    width: 100%;
+                }
+            }
+
+            // Style for cards from the fourth one onwards
+            &:nth-child(n+4) {
+                grid-column: 1 / -1; // Span all columns to make it full-width
+                display: flex;
+                align-items: center;
+                padding: $space-md; // Add padding to full-width cards
+                .activity-image {
+                    width: 40%;
+                }
+            }
+
+            .tag {
+              background-color: $green-200;
+              position: absolute;
+              top: $space-sm;
+              right: $space-sm;
+            }
+
+            .activity-image {
+              height: auto;
+              border-radius: 8px;
+              margin-right: $space-md; // Space between image and text
+            }
+
+            .activity-content {
+                padding: $space-sm;
+                text-align: left;
+            }
+
+            h2 {
+            font-size: $font-size-md;
+            color: $blue-500;
+            margin-bottom: $space-xs;
+            }
+
+            p {
+            font-size: $font-size-sm;
+            color: $dark-grey;
+            margin-bottom: $space-md;
+            }
+
+            .btn-read-more {
+              background-color: $blue-600;
+              color: $white;
+              border: none;
+              padding: 0.5rem 1rem;
+              font-size: $font-size-sm;
+              border-radius: 4px;
+              cursor: pointer;
+              text-decoration: none;
+              transition: background-color 0.2s ease;
+
+              &:hover {
+                  background-color: $grey-700;
+              }
+            }
+        }
+    }
+  }
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  color: $grey;
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: $space-sm;
+  font-family: $font-alt;
+
+  i {
+    margin-right: $space-xs;
+    transform: translateY(-1px);
+  }
+}
+
+
+.tag {
+  display: inline-block;
+  background-color: $green-200;
+  color: $black;
+  padding: 0.2rem $space-xs;
+  font-size: $font-size-sm;
+  border-radius: 4px;
+  margin-bottom: $space-sm;
+}
+
+.tag-sidebar {
+  background-color: $red-100;
+}
+
+
+.news {
+  background-color: transparent;
+  padding: 0;
+  .news-card {
+    background-color: $purple-50;
+    padding: $space-md;
+    // border: 1px solid $light-grey-400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: $space-md;
+
+    h2 {
+      font-size: $font-size-md;
+      color: $red-600;
+      margin-bottom: $space-xs;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      color: $dark-grey;
+      margin-bottom: $space-md;
+    }
+
+    .btn-read-more {
+      background-color: $red-600;
+      color: $white;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: $font-size-sm;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: $red-800;
+      }
+    }
+  }
+}
+
+.sidebar-card-image {
+  max-height: 200px;
+  margin-bottom: $space-sm;
+  margin-top: $space-xs;
+  object-fit: cover;
+}

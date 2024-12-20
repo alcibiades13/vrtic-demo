@@ -1,0 +1,93 @@
+.quick-preview {
+  padding: $space-xxl 0;
+  background-color: $light-grey;
+  // background-color: $blue-200;
+
+  .preview-wrapper {
+    display: flex;
+    gap: $space-md;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .preview-card {
+    flex: 1 1 calc(33.333% - $space-md);
+    max-width: calc(33.333% - $space-md);
+    background-color: $white;
+    // background-color: darken($grey-700, 5%);
+    border: 2px solid $light-grey-400;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: $space-sm;
+    padding: $space-sm;
+    // text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.35s, box-shadow 0.35s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .preview-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: $space-sm;
+      border-radius: $space-xs;
+    }
+
+    .preview-title {
+      font-size: $font-size-md;
+      font-family: $font-primary;
+      margin-bottom: $space-xs;
+      color: $pink-600;
+        // text-shadow: 0 0 1em $purple-400, 0 0 0.2em $black;
+      // color: $light-grey;
+    }
+
+    .preview-description {
+      font-size: $font-size-sm;
+      font-family: $font-secondary;
+      color: $black;
+      // color: $grey;
+    }
+  }
+
+  // Card Color Variations
+  .teal-card {
+    border-color: $teal-400;
+    // box-shadow: 0 4px 6px rgba($teal-400, 0.3);
+    box-shadow: rgba($teal-400, 0.5) 0px 7px 29px 0px;
+    // background-image: linear-gradient(to bottom, $red-400,  $teal-400);
+  }
+
+  .green-card {
+    border-color: $red-400;
+    // box-shadow: 0 4px 6px rgba($red-400, 0.3);
+    box-shadow: rgba($red-400, 0.5) 0px 7px 29px 0px;
+    // background-image: linear-gradient(to bottom, $blue-400,  $teal-400);
+  }
+
+  .yellow-card {
+    border-color: $yellow-400;
+    // box-shadow: 0 4px 6px rgba($yellow-400, 0.3);
+    box-shadow: rgba($yellow-400, 0.5) 0px 7px 29px 0px;
+    // background-image: linear-gradient(to bottom, $yellow-400,  $teal-400);
+  }
+}
+
+.quick-preview-text {
+  position: relative;
+  padding-right: $space-xl;
+
+  ::after {
+    content: "\f101";
+    font-family: "FontAwesome"; 
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    font-size: 20px;
+    color: $pink-600;
+    font-display: swap;
+  }
+}

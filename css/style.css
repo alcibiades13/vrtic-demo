@@ -149,6 +149,14 @@
   flex-direction: column;
 }
 
+.title {
+  font-family: Forum, "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #a66489;
+  margin-bottom: 2rem;
+}
+
 .wave {
   width: 100%;
   height: 50px;
@@ -285,7 +293,7 @@
 .hero {
   position: relative;
   height: calc(80vh - 100px); /* Full viewport height */
-  background-image: url("../images/deca-na-igralistu-10.png"); /* Replace with your image path */
+  background-image: url("../images/deca-na-igralistu-10.jpg"); /* Replace with your image path */
   background-size: cover; /* Cover the entire section */
   background-position: center bottom; /* Center the background */
   display: flex; /* Use flexbox for centering */
@@ -715,12 +723,16 @@
 
 .tag {
   display: inline-block;
-  background-color: #f8e7e7;
+  background-color: #dae8d6;
   color: black;
   padding: 0.2rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 4px;
   margin-bottom: 1rem;
+}
+
+.tag-sidebar {
+  background-color: #f8e7e7;
 }
 
 .news {
@@ -759,6 +771,13 @@
   background-color: #8f5858;
 }
 
+.sidebar-card-image {
+  max-height: 200px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  object-fit: cover;
+}
+
 .vrtici-page {
   font-family: "Montserrat", sans-serif;
   background-color: #efecdd;
@@ -768,7 +787,7 @@
   max-width: 1320px;
 }
 .vrtici-page .page-header {
-  background-image: url("../images/page-bg/cetiri-zgrade-vrtica.jpeg");
+  background-image: url("../images/page-bg/cetiri-zgrade-vrtica.jpg");
 }
 .vrtici-page .page-header .container {
   max-width: 1200px;
@@ -1049,6 +1068,7 @@
 .object-page .object-info .info-card .info-content {
   margin-top: 0.25rem;
   color: #f8f8fa;
+  line-height: 1.5;
 }
 .object-page .object-groups {
   margin: 3rem 0;
@@ -1322,23 +1342,23 @@
   background-position: center bottom;
 }
 
-.menu-benefits {
+.menu-benefits, .rules-overview {
   padding: 2rem 0;
   margin-bottom: 2rem;
 }
-.menu-benefits h2 {
+.menu-benefits h2, .rules-overview h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #a66489;
   font-family: Forum;
 }
-.menu-benefits .intro-text {
+.menu-benefits .intro-text, .rules-overview .intro-text {
   margin-top: 1rem;
   margin-bottom: 3rem;
   line-height: 1.5;
 }
-.menu-benefits .cards-container {
+.menu-benefits .cards-container, .rules-overview .cards-container {
   display: flex;
   justify-content: space-between;
   justify-content: center;
@@ -1346,7 +1366,7 @@
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.menu-benefits .cards-container .card {
+.menu-benefits .cards-container .card, .rules-overview .cards-container .card {
   background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
@@ -1355,21 +1375,21 @@
   max-width: 600px;
   display: flex;
 }
-.menu-benefits .cards-container h3 {
+.menu-benefits .cards-container h3, .rules-overview .cards-container h3 {
   color: #333333;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.menu-benefits .cards-container p {
+.menu-benefits .cards-container p, .rules-overview .cards-container p {
   color: #666;
   font-size: 1rem;
   line-height: 1.5;
 }
-.menu-benefits .cards-container .card-icon {
+.menu-benefits .cards-container .card-icon, .rules-overview .cards-container .card-icon {
   margin-right: 2rem;
   flex-shrink: 0;
 }
-.menu-benefits .cards-container .card-icon img {
+.menu-benefits .cards-container .card-icon img, .rules-overview .cards-container .card-icon img {
   width: 140px;
   height: 140px;
   border-radius: 8px;
@@ -1646,13 +1666,6 @@
 .programi-rada {
   background-color: #f8f8f8;
 }
-.programi-rada .programi-rada-title {
-  font-family: Forum, "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #a66489;
-  margin-bottom: 2rem;
-}
 .programi-rada .programi-rada-section {
   margin-bottom: 3rem;
 }
@@ -1661,11 +1674,10 @@
   font-size: 1.5rem;
   color: #50636a;
   margin-bottom: 1.5rem;
-  background-color: #dae8d6;
+  background-image: linear-gradient(to right, #dae8d6, transparent);
   color: black;
   padding: 10px 1.5rem;
-  display: inline-block;
-  padding-bottom: 4px;
+  display: block;
 }
 .programi-rada .programi-rada-section .programi-rada-text {
   font-family: "Open Sans", sans-serif;
@@ -2042,6 +2054,159 @@
 .contact-section .map-container iframe {
   display: block;
   border: none;
+}
+
+.dokumenta-page .page-header {
+  background-image: url("../images/page-bg/dokumenta-ilustracija.jpg");
+}
+
+.dokumenta {
+  text-align: center;
+}
+.dokumenta .document-list {
+  list-style: none;
+  padding: 0;
+}
+.dokumenta .document-list .document-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  flex: 0 0 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 5px;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dokumenta .document-list .document-item h3 {
+  font-size: 1.5rem;
+  color: #50636a;
+  margin-bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.dokumenta .document-list .document-item p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.dokumenta .document-list .document-item .document-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #71b9c8;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.dokumenta .document-list .document-item .document-link i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #64A681;
+}
+.dokumenta .document-list .document-item .document-link:hover {
+  color: #50636a;
+}
+
+.kucni-red-page .page-header {
+  background-image: url("../images/page-bg/kucni-red-ilustracija.jpeg");
+}
+
+.kucni-red .rules-overview .cards-container .card {
+  padding-top: 3rem;
+}
+.kucni-red .card {
+  position: relative;
+  padding: 1rem;
+}
+.kucni-red .card .card-text h3 {
+  color: #50636a;
+  display: flex;
+  align-items: center;
+}
+.kucni-red .card .card-text h3 i {
+  margin-right: 1rem;
+  color: #a66489;
+  border-radius: 50%;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #9974a0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kucni-red .card .card-text ul {
+  list-style-position: inside;
+}
+.kucni-red .card .card-text ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.kucni-red .card .card-icon {
+  margin-left: 0;
+}
+.kucni-red .footnote-text {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.pravila-ponasanja {
+  background-image: linear-gradient(to right, white 0%, white 50%, #f8f8fa 50%, #f8f8fa 100%);
+}
+.pravila-ponasanja .grid-container {
+  display: flex;
+  gap: 4.5rem;
+}
+.pravila-ponasanja .grid-container .title {
+  font-size: 2rem;
+  text-align: left;
+}
+.pravila-ponasanja .grid-container .title .highlight {
+  color: #597290;
+  font-family: Forum, "Montserrat", sans-serif, sans-serif;
+  font-style: italic;
+}
+.pravila-ponasanja .grid-container .col-6 {
+  flex: 1;
+}
+
+.behavior-code h3 {
+  color: #50636a;
+  margin-bottom: 1.5rem;
+}
+.behavior-code ul {
+  padding-left: 20px;
+  margin-bottom: 2rem;
+}
+.behavior-code ul li {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.behavior-code p {
+  line-height: 1.5;
+}
+.behavior-code .signature {
+  margin-top: 2rem;
+}
+.behavior-code .content-intro {
+  background-color: #e9f1e6;
+  border: 1px solid #d1ebb6;
+  display: inline-block;
+  padding: 1.5rem;
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+.behavior-code .content-intro li {
+  margin: 0.5rem 0;
 }
 
 .organizational-structure {

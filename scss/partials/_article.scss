@@ -1,0 +1,150 @@
+.article {
+    padding: $space-xl;
+    padding-top: $space-xxl;
+    background-color: $purple-50;
+    border-radius: 8px;
+    line-height: 1.5;
+
+    img {
+      margin-bottom: $space-md;
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: $purple-600;
+      font-weight: 500;
+      margin-top: $space-lg;
+      display: inline-block;
+
+      i {
+        margin-right: $space-xs;
+      }
+    }
+}
+
+.article-paragraph {
+    margin-bottom: $space-md;
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-title {
+  font-size: $font-size-xxl;
+  font-family: $font-primary;
+  font-family: $font-secondary;
+  line-height: 1.25;
+  margin-bottom: $space-lg;
+}
+
+.article-page {
+  // background-color: $light-grey-200;
+
+  .activity-main-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: $space-xs;
+  }
+
+  .article {
+
+    .activity-title {
+      font-size: $font-size-xxl;
+      font-family: $font-primary;
+      color: $dark-text;
+      margin-bottom: $space-sm;
+    }
+
+    .activity-date {
+      font-size: $font-size-sm;
+      color: $grey;
+      margin-bottom: $space-md;
+    }
+
+    .activity-text {
+      margin-bottom: $space-lg;
+
+      p {
+        font-size: $font-size-base;
+        color: $dark-grey;
+        margin-bottom: $space-sm;
+      }
+
+      .activity-subheading {
+        font-size: $font-size-lg;
+        font-family: $font-secondary;
+        color: $teal-600;
+        margin-top: $space-md;
+        margin-bottom: $space-sm;
+      }
+    }
+
+    // Styling for the image grid
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 images per row
+        gap: $space-sm; // Using your defined spacing variable
+        position: relative;
+        background-color: $blue-200;
+        padding: $space-sm;
+
+        .grid-image {
+            width: 100%;
+            aspect-ratio: 4 / 3; // Ensure uniform image sizes
+            object-fit: cover;
+            border-radius: $space-xs; // Matches small border radius
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        .carousel-overlay {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 5;
+            background-color: rgba($black, 0.6); // Semi-transparent overlay
+            color: $white;
+            padding: $space-xs $space-sm; // Your spacing variables
+            border-radius: 0 0 0 $space-xs;
+            font-family: $font-secondary; // Matches your secondary font
+            font-size: $font-size-base;
+            font-weight: 600; // Custom font weight
+        }
+      }
+
+    // Styling for social sharing section
+    .social-sharing {
+        margin-top: $space-lg;
+        padding-top: $space-md;
+        border-top: 1px solid $light-grey-400;
+
+        .share-title {
+            font-size: $font-size-md;
+            font-family: $font-primary;
+            margin-bottom: $space-sm;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: $space-xs;
+            margin-right: $space-sm;
+            color: $pink-800;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $blue-600;
+            }
+
+            i {
+                font-size: 1.2rem; // Adjust icon size slightly
+            }
+        }
+    }
+  }
+}

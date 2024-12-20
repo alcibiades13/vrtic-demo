@@ -1,0 +1,120 @@
+
+.contact-page .page-header {
+    background-image: url("../images/page-bg/kontakt-ilustracija.jpg");
+}
+
+
+.contact-section {
+  padding: 2rem 0;
+
+  h2 {
+    font-size: $font-size-xl;
+    color: $teal-800;
+    font-family: Forum, $font-secondary, sans-serif;
+    margin-bottom: $space-lg;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .col {
+    //   flex: 1 1 calc(33.33% - 2rem);
+    }
+
+    @media (max-width: 960px) {
+      .col {
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  .contact-details {
+    width: 22%;
+  }
+
+  .employees {
+    width: calc(35% - 2rem);
+  }
+
+  .contact-details,
+  .employees {
+    padding-top: $space-md;
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+
+      strong {
+        color: $purple-500;
+      }
+
+      a {
+        color: $purple-400;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    width: 38%;
+    padding: $space-md;
+    align-self: flex-start;
+    background-color: $blue-100;
+    form {
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+          color: $grey;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid $blue-100;
+          border-radius: 5px;
+          font-size: 1rem;
+          color: $grey;
+        }
+
+        textarea {
+          height: 150px;
+          resize: none;
+        }
+      }
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        background-color: $purple-500;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $purple-600;
+        }
+      }
+    }
+  }
+
+  .map-container {
+    margin-top: 2rem;
+    iframe {
+      display: block;
+      border: none;
+    }
+  }
+}

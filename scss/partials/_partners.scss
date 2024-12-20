@@ -1,0 +1,43 @@
+.partners {
+    // background-color: $blue-200;
+    // background-image: linear-gradient(to bottom, $white, $orange-100);
+    // background-image: linear-gradient(to bottom, $grey-600, $grey-700);
+    background-color: $blue-400;
+    background-color: $light-grey;
+    text-align: center;
+    padding: $theme-margin;
+
+    .container {
+        max-width: unset;
+    }
+
+    .title-header .title {
+        color: $red-500;
+    }
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: $space-lg;
+    margin-top: $space-xl;
+}
+
+.partner-logo {
+    flex: 1;
+    background-color: white;
+    padding: $space-md;
+    border-radius: 20px;
+    height: 110px; /* Set a fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.partner-logo img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}

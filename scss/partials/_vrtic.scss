@@ -1,0 +1,261 @@
+
+.kolibri-vrtic-page .page-header {
+  background-image: url("../images/page-bg/kolibri-ilustracija.jpg");
+}
+
+.pcelica-vrtic-page .page-header {
+  background-image: url("../images/page-bg/pcelica-ilustracija-3.jpg");
+}
+
+.lane-vrtic-page .page-header {
+  background-image: url("../images/page-bg/lane-ilustracija-2.jpg");
+}
+
+.decja-radost-vrtic-page .page-header {
+  background-image: url("../images/page-bg/decja-radost-ilustracija.jpg");
+}
+
+.object-page {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+
+  .object-name {
+    font-size: 3rem;
+    color: $pink-600; // Your primary color
+    font-family: Forum, $font-secondary;
+  }
+
+  .object-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: $space-xl 0;
+
+    img {
+      // width: 30%;
+      flex: 1;
+      max-width: calc(33% - .5rem);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+  }
+
+  .object-info {
+    display: flex;
+    justify-content: space-around;
+    background: $blue-800; // Your secondary color
+    padding: 1rem;
+    border-radius: 8px;
+
+    .info-card {
+      flex: 1;
+      margin: 0 0.5rem;
+      text-align: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      i {
+        font-size: 1.25rem;
+        color: $blue-800;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $orange-400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .info-title {
+        font-weight: bold;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        color: $white;
+      }
+
+      .info-content {
+        margin-top: 0.25rem;
+        color: $purple-50;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .object-groups {
+    margin: $space-xl 0;
+
+    .groups-title {
+      font-size: 1.5rem;
+      color: $black;
+    }
+
+    .groups-table {
+      margin: 1rem auto;
+      // width: 80%;
+      border-collapse: collapse;
+
+      th, td {
+        border: 1px solid $light-grey; // Your border color
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      th {
+        background: $pink-600; 
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 15px 10px;
+
+        &.number {
+          background-color: $blue-100;
+          color: $black;
+        }
+      }
+
+      td {
+        background: $light-grey; // Background for table cells
+        border-color: $pink-200;
+      }
+    }
+  }
+}
+
+.facility-info {
+  // padding: $space-lg;
+  font-family: $font-primary;
+  // background-color: $light-grey;
+  color: $black;
+
+  .facility-header {
+    margin-bottom: $space-lg;
+    padding: $space-md;
+    border-left: 5px solid $teal-400;
+    background-color: $teal-100;
+    text-align: left;
+
+    h2 {
+      font-size: $font-size-md;
+      color: $teal-800;
+      margin-bottom: $space-sm;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: $font-size-base;
+      line-height: 1.5;
+      margin: $space-xs 0;
+      color: $black;
+    }
+  }
+
+  .facility-details {
+    margin-bottom: $space-xl;
+    background: $white;
+    padding: $space-lg;
+    border-radius: $space-xs;
+    box-shadow: 0 4px 8px rgba($black, 0.1);
+
+    h2 {
+      font-size: $font-size-lg;
+      margin-bottom: $space-sm;
+      color: $teal-600;
+    }
+    
+    p {
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: $space-lg;
+      text-align: left;
+
+      li {
+        margin-bottom: $space-xs;
+        line-height: 1.5;
+        color: $dark-grey;
+      }
+    }
+  }
+
+  .employee-structure {
+    background: $white;
+    padding: $space-lg;
+    border-radius: $space-xs;
+    box-shadow: 0 4px 8px rgba($black, 0.1);
+
+    h2 {
+      font-size: $font-size-lg;
+      margin-bottom: $space-sm;
+      color: $teal-600;
+    }
+
+    p {
+      margin-bottom: $space-sm;
+      line-height: 1.5;
+      
+      color: $black;
+    }
+
+    ol {
+      // list-style: disc;
+      margin-left: $space-lg;
+      text-align: left;
+      margin-bottom: $space-md;
+
+      li {
+        margin-bottom: $space-xs;
+        line-height: 1.5;
+        color: $black;
+      }
+    }
+  }
+}
+
+.object-navigation {
+    background-color: $green-100; // Adjust color to match your theme
+    padding: $space-md;
+    text-align: center;
+    border-top: 1px solid $light-grey-400
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: $space-lg;
+        color: $purple-500;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: $space-lg;
+
+        li {
+            a {
+                text-decoration: none;
+                color: $blue-500;
+                font-weight: bold;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $purple-400;
+                }
+            }
+
+            &.current a {
+                color: $purple-200;
+                text-decoration: underline;
+            }
+        }
+    }
+}

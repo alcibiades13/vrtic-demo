@@ -1,0 +1,110 @@
+// Color Palette
+$teal-100:   #e0f0f0;
+$teal-200:   #b3d9d8;
+$teal-400:   #89c4c2; // Base teal color (137, 196, 194)
+$teal-500:   #64A681;
+$teal-600:   #579f9d;
+$teal-800:   #2c7472;
+
+$green-100:  #f4faef;
+$green-200:  #dae8d6;
+$green-400:  #d1ebb6; // Base green color (209, 235, 198)
+$green-600:  #a8c191;
+$green-800:  #7e966c;
+
+$yellow-100: #fafbef;
+$yellow-200: #f5f8d6;
+$yellow-400: #f3f7c2; // Base yellow color (243, 247, 194)
+$yellow-600: #c3c79a;
+$yellow-800: #93976f;
+
+$orange-100: #fdf2e8;
+$orange-200: #fbe3d1;
+$orange-400: #f9d5a5; // Base orange color (249, 213, 165)
+$orange-600: #ccaa7d;
+$orange-800: #9e8255;
+
+$red-100:    #f8e7e7;
+$red-200:    #f3cfcf;
+$red-400:    #f4a2a2; // Base red color (244, 162, 162)
+$red-600:    #c17d7d;
+$red-800:    #8f5858;
+
+$pink-100:   #fbe9f3;
+$pink-200:   #f8d2e7;
+$pink-400:   #ed8fc3; // Base pink color (188, 120, 159)
+$pink-600:   #a66489;
+$pink-800:   #774862;
+
+$blue-100:   #ebedf5;
+$blue-200:   #d7d9eb;
+$blue-400:   #9ca3d6; // Base blue color (156, 163, 214)
+$blue-600:   #6c72a9;
+$blue-800:   #4b527d;
+
+$purple-50: #f8f8fa;
+$purple-100: #BCB4CF;
+$purple-200: #8F83AF;
+$purple-400: #665889;
+$purple-600: #494064;
+$purple-800: #2E283E;
+
+// Background and Text Colors
+$light-grey:   #fdfdfd;  // Light background color
+$light-grey-200: #f8f8f8;  // Slightly darker variation
+$light-grey-400: #f2f2f2;  // Another variation for contrast
+$light-grey-600: #e2e2e2;
+$light-grey-800: #d2d2d2;
+$dark-text:  #333333;  // Dark text color for readability
+$dark-grey: #666;
+$white: white;
+$black: black;
+$grey: #888;
+
+//////////////////////////////////////////////////////////////
+// Warm Tones
+$warm-100: #f0e9d9;
+$warm-200: #efecdd;
+$warm-300: #f5ead6;
+$yellow-300: #e8d59a;
+$yellow-400: #f0d9a3;
+$orange-300: #e3bc6f;
+
+// Neutral and Cool Tones
+$teal-700: #486962;
+$teal-600: #50636a;
+$blue-600: #597290;
+$blue-500: #53697e;
+$purple-500: #9974a0;
+$grey-600: #647d84;
+$grey-700: #565a63;
+
+// Accent Tones
+$red-500: #c75e40;
+$blue-400: #71b9c8;
+
+
+
+// Margins and Padding
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+$space-xxl: 4.5rem;
+$theme-margin: 6rem;
+
+// Fonts
+$font-primary: 'Montserrat', sans-serif; // You can switch this to Open Sans later
+$font-secondary: 'Raleway', sans-serif;
+$font-alt: 'Open Sans', sans-serif;
+$font-cursive: 'Caveat', cursive;
+$font-playful: 'Great Vibes', cursive;
+
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1.25rem;
+$font-size-lg: 1.5rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 2.5rem;
+$font-size-xxxl: 4rem;

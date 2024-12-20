@@ -1,0 +1,62 @@
+.kucni-red-page .page-header {
+    background-image: url("../images/page-bg/kucni-red-ilustracija.jpeg");
+}
+
+.kucni-red {
+
+    .rules-overview .cards-container .card {
+        padding-top: $space-xl;
+    }
+
+    .card {
+        position: relative;
+        padding: $space-sm;
+        
+        .card-text {
+
+            h3 {
+                color: $teal-600;
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-right: $space-sm;
+                    color: $pink-600;
+                    // position: absolute;
+                    // top: 0;
+                    // left: $space-sm;
+                    // transform: translateY(-50%);
+                    border-radius: 50%;
+                    height: 40px;
+                    min-width: 40px;
+                    width: 40px;
+                    font-size: 16px;
+                    background-color: $purple-500;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            ul  {
+                list-style-position: inside;
+
+                li {
+                    margin-bottom: $space-xs;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .card-icon {
+            margin-left: 0;
+        }
+    }
+
+    .footnote-text {
+        margin-top: $space-lg;
+        font-weight: 500;
+    }
+
+}

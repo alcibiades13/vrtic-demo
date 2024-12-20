@@ -1,0 +1,267 @@
+.vrtici-page {
+  font-family: $font-primary;
+  background-color: $warm-200;
+  text-align: center;
+
+  .container {
+    max-width: 1320px;
+  }
+
+  .page-header {
+    background-image: url("../images/page-bg/cetiri-zgrade-vrtica.jpg");
+
+    .container {
+        max-width: 1200px;
+    }
+  }
+
+  .vrtici-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: relative;
+    box-shadow: rgba($teal-400, 0.5) 0px 7px 29px 0px;
+  }
+
+  .vrtic-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: $blue-400;
+    padding: $space-xl $space-md;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    // height: 360px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      .btn i {
+        transform: translateX(6px);
+      }
+
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      background-color: $grey;
+      z-index: 2;
+      display: none;
+    }
+
+    &:nth-of-type(1) {
+      background-color: $yellow-400;
+
+      h2 {
+        color: $purple-400;
+      }
+
+      .vrtic-image {
+        border-color: $purple-400;
+      }
+
+      &:hover {
+        ~ .vrtic-ilustracija {
+          transform: translate(-50%, -50%) rotate(-15deg);
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      background-color: $blue-400;
+      background-color: $pink-600;
+      justify-content: flex-end;
+
+      h2 {
+        color: $teal-500;
+      }
+
+      .btn {
+        background-color: $teal-500;
+      }
+
+      .vrtic-image {
+        border-color: $teal-500;
+        order: 2;
+        margin-right: 0;
+        margin-left: $space-lg;
+      }
+
+      .vrtic-info {
+        text-align: right;
+      }
+
+      .intro {
+        color: $purple-50;
+      }
+
+      address {
+        color: $purple-50;
+      }
+
+      &:hover {
+        ~ .vrtic-ilustracija {
+          transform: translate(-50%, -50%) rotate(15deg);
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      background-color: $purple-500;
+
+      h2 {
+        color: $yellow-400;
+      }
+
+      .btn {
+        background-color: $yellow-400;
+        color: $purple-600;
+      }
+
+      .vrtic-image {
+        border-color: $yellow-400;
+      }
+
+      .intro, address {
+        color: $warm-100;
+      }
+
+      &:hover {
+        ~ .vrtic-ilustracija {
+          transform: translate(-50%, -50%) rotate(-30deg);
+          transition: transform 0.3s ease;
+        }
+      }
+      .vrtic-info address i {
+        color: $yellow-400;
+      }
+    }
+
+    &:nth-of-type(4) {
+      background-color: $red-500;
+      background-color: $teal-500;
+      justify-content: flex-end;
+
+      h2 {
+        color: $pink-600;
+      }
+
+      .btn {
+        background-color: $pink-600;
+        color: $purple-50;
+      }
+
+      .vrtic-image {
+        border-color: $pink-600;
+        order: 2;
+        margin-right: 0;
+        margin-left: $space-lg;
+      }
+
+      .vrtic-info {
+        text-align: right;
+      }
+
+      .intro, address {
+        color: $warm-100;
+      }
+
+      &:hover {
+        .btn i {
+          transform: translateX(6px);
+        }
+
+        ~ .vrtic-ilustracija {
+          transform: translate(-50%, -50%) rotate(30deg);
+          transition: transform 0.3s ease;
+        }
+      }
+      .vrtic-info address i {
+        color: $pink-600;
+      }
+    }
+
+    .intro {
+      font-size: $font-size-lg;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: $font-alt;
+    }
+
+    .btn {
+      margin-top: $space-xl;
+      background-color: $purple-400;
+      color: $white;
+      bottom: 0;
+      right: 0;
+      font-weight: 500;
+
+      i {
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+
+  .vrtic-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: $space-lg;
+    position: relative;
+    z-index: 2;
+    border: 1px solid $white;
+    border-radius: 15px;
+  }
+
+  .vrtic-info {
+    text-align: left;
+
+    h2 {
+      font-size: 3rem;
+      white-space: nowrap;
+      color: $dark-grey;
+      font-family: Forum, $font-cursive;
+      margin-bottom: $space-sm;
+    }
+
+    p {
+      font-size: $font-size-base;
+      color: $dark-grey;
+      margin-bottom: $space-xs;
+    }
+
+    address {
+      font-size: 18px;
+      color: $dark-grey;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5;
+
+      i {
+        color: $pink-600;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.vrtic-ilustracija {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 10px solid $warm-200;
+  z-index: 11;
+}

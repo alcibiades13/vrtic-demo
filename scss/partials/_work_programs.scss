@@ -1,0 +1,60 @@
+.programi-rada-page {
+
+    .page-header {
+        background-image: url("../images/page-bg/programi-rada-ilustracija.jpg");
+    }
+}
+
+.programi-rada {
+  background-color: $light-grey-200;
+//   padding: $space-xxl 0;
+
+  // .programi-rada-title {
+  //   font-family: Forum, $font-primary;
+  //   font-size: $font-size-xxl;
+  //   text-align: center;
+  //   color: $pink-600;
+  //   margin-bottom: $space-lg;
+  // }
+
+  .programi-rada-section {
+    margin-bottom: $space-xl;
+
+    .programi-rada-subtitle {
+      font-family: $font-secondary;
+      font-size: $font-size-lg;
+      color: $teal-600;
+      margin-bottom: $space-md;
+      // background-color: $green-200;
+      background-image: linear-gradient(to right, $green-200, transparent);
+      color: $black;
+      padding: 10px $space-md;
+      display: block;
+    }
+
+    .programi-rada-text {
+      font-family: $font-alt;
+      font-size: $font-size-md;
+      color: $black;
+      line-height: 1.6;
+      margin-bottom: $space-sm;
+    }
+
+    .programi-rada-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-family: $font-alt;
+        font-size: $font-size-md;
+        line-height: 1.6;
+        color: $dark-text;
+        margin-bottom: $space-sm;
+
+        strong {
+          color: $teal-800;
+        }
+      }
+    }
+  }
+}

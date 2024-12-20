@@ -1,0 +1,115 @@
+.ritam-dana-page .page-header {
+  background-image: url("../images/page-bg/ritam-dana-ilustracija.jpg");
+}
+
+.daily-routine {
+  background-color: $light-grey-200;
+  font-family: $font-primary;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $space-md;
+  }
+
+  .intro-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space-lg;
+    gap: $space-lg;
+
+    .intro-img {
+        max-width: 40%;
+        // flex: 1;
+    }
+
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .description {
+      font-size: $font-size-base;
+      color: $black;
+      line-height: 1.5;
+      margin-bottom: $space-sm;
+    }
+  }
+
+  .routine-schedule {
+    .schedule-title {
+      font-size: $font-size-lg;
+      color: $pink-800;
+      text-align: center;
+      margin-bottom: $space-md;
+
+      &.align-left {
+        text-align: left;
+      }
+    }
+
+    .schedule-grid {
+      display: flex;
+      gap: $space-lg;
+      flex-wrap: wrap;
+      margin-bottom: $space-xl;
+
+      .schedule-grid-col {
+        display: flex;
+        flex-direction: column;
+        // flex: 1;
+        width: calc(50% - $space-sm);
+
+        .p-wrapper {
+            background-color: $white;
+            padding: $space-md;
+            border-radius: 8px;
+        }
+        .description {
+            margin-bottom: $space-sm;
+        }
+      }
+
+      .schedule-item {
+        background-color: $white;
+        border-radius: 8px;
+        padding: $space-md;
+        display: flex;
+        border-bottom: 1px solid $blue-100;
+        // width: calc(50% - $space-lg);
+        width: 100%;
+        gap: $space-md;
+        align-items: center;
+
+        .schedule-icon {
+          width: 50px;
+          margin-bottom: $space-sm;
+        }
+
+        i {
+            font-size: 1.875rem;
+            color: $purple-500;
+            max-width: 34px;
+            width: 34px;
+        }
+
+        .schedule-time {
+          font-size: $font-size-base;
+          font-weight: 500;
+          color: $red-600;
+          margin-bottom: $space-xs;
+        }
+
+        .schedule-activity {
+          font-size: $font-size-base;
+          color: $dark-text;
+        }
+      }
+    }
+  }
+
+  .description {
+    line-height: 1.5;
+  }
+}

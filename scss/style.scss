@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Forum&family=Great+Vibes:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+@import 'partials/variables';
+@import 'partials/general';
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/mission-vision';
+@import 'partials/partners';
+@import 'partials/footer';
+@import 'partials/activities';
+@import 'partials/vrtici';
+@import 'partials/vrtic';
+@import 'partials/article';
+@import 'partials/eating_menu';
+@import 'partials/quick_preview';
+@import 'partials/enrollment';
+@import 'partials/daily_routine';
+@import 'partials/work_programs';
+@import 'partials/public_procurement';
+@import 'partials/services';
+@import 'partials/history';
+@import 'partials/contact';
+@import 'partials/documents';
+@import 'partials/kucni_red';
+@import 'partials/behavior_code';
+@import 'partials/organization_structure';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: $warm-100;
+    font-family: $font-primary;
+}
+

@@ -1,0 +1,86 @@
+.mission, .vision {
+
+    .container {
+        background-color: $yellow-200;
+        background-image: linear-gradient(to right, $yellow-200, $pink-200);
+        display: flex;
+        align-items: center;
+        max-width: 1200px;  // adjust as necessary
+        margin: 0 auto;
+        padding: 0 $space-lg $space-md;
+        gap: $space-md;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+        .text-content {
+            flex: 4;
+            padding: $space-lg;
+            border-radius: 25px;
+
+            
+            p {
+                font-size: $font-size-base;
+                line-height: 1.5;
+                font-family: $font-secondary;
+                // color: $dark-text;
+            }
+        }
+
+        .image-content {
+            flex: 3;
+            margin-top: 5.5rem;
+            padding-top: $space-xl;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+.vision {
+    padding-top: 0;
+
+    .container {
+        background-image: linear-gradient(to right, $blue-200, $green-200);
+
+        .image-content {
+            text-align: right;
+        }
+    }
+}
+
+.mv-cards {
+    display: flex;
+    // flex-direction: column;
+    gap: $space-xs;
+    flex-wrap: wrap;
+}
+
+.mv-card {
+    background-color: $purple-50;
+    background-color: $purple-500;
+    color: $white;
+    padding: $space-sm;
+    width: calc(50% - $space-xs);
+    margin-bottom: 0;
+    border-radius: 8px;
+
+    &:nth-of-type(3) {
+        width: calc(100% - $space-xs);
+    }
+    &:nth-of-type(2) {
+        background-color: $grey-600;
+    }
+    &:nth-of-type(3) {
+        background-color: $blue-600;
+    }
+    &:nth-of-type(4) {
+        background-color: $pink-600;
+    }
+    &:nth-of-type(5) {
+        background-color: $purple-400;
+    }
+}

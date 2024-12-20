@@ -1,0 +1,88 @@
+.enrollment-page {
+
+    .page-header {
+        background-image: url("../images/page-bg/tabla-sa-beleskama-i-deca2.jpg");
+        background-position: center -380px;
+    }    
+}
+
+.enrollment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $space-lg;
+  background-color: $light-grey-200;
+
+  .enrollment-content {
+    flex: 1;
+    max-width: 40%;
+    padding-right: $space-md;
+
+    .enrollment-title {
+      font-size: $font-size-xxl;
+      font-family: Forum, $font-primary;
+      color: $dark-text;
+      margin-bottom: $space-xl;
+    }
+
+    .enrollment-list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: $space-sm;
+
+        a {
+          font-size: $font-size-md;
+          font-family: $font-secondary;
+          color: $blue-500;
+          font-weight: 500;
+          text-decoration: none;
+          transition: color 0.3s ease;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: $blue-800;
+          }
+
+            &::before {
+                content: '•'; // Unicode bullet
+                // transform: translateY(-50%);
+                font-size: $font-size-xl; // Match link font size
+                color: $blue-400;
+                margin-right: 1rem;
+            }
+        }
+      }
+    }
+  }
+
+  .enrollment-image {
+    flex: 1;
+    max-width: 55%;
+    img {
+      width: 100%;
+      border: 1px solid $light-grey-400;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: $space-xs;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .enrollment {
+    flex-direction: column;
+
+    .enrollment-content {
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    .enrollment-image {
+      max-width: 100%;
+      margin-top: $space-md;
+    }
+  }
+}

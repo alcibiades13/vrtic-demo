@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+  height: calc(80vh - 100px); /* Full viewport height */
+  background-image: url('../images/deca-na-igralistu-10.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center bottom; /* Center the background */
+  display: flex; /* Use flexbox for centering */
+  // flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Center vertically */
+  padding-top: 40px;
+  color: $dark-text; /* Use your defined dark text color */
+  text-align: center; /* Center align text */
+
+  img {
+    max-width: 80%;
+  }
+}
+
+.hero-content {
+  z-index: 1; /* Ensure content is above the background */
+  padding: 1.5rem; /* Add some padding */
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: $space-sm;
+}
+
+.hero-logo {
+  width: 180px;
+  height: 180px;
+}
+
+.hero-title {
+  font-size: 3rem; /* Large font size for the title */
+  margin: 0; /* Remove default margin */
+  font-family: $font-primary; /* Use your primary font */
+  color: $pink-800;
+  text-shadow: 0 0 1em $white, 0 0 0.2em $white;
+}
+
+.hero-subtext {
+  font-size: 3.5rem; /* Smaller font size for subtext */
+  margin-bottom: $space-md; /* Margin between title and subtext */
+  font-family: $font-primary; /* Use your secondary font */
+  font-weight: bold;
+  color: $pink-800;
+  text-shadow: 0 0 1em $white, 0 0 0.2em $white;
+}
+
+.cta-button {
+  display: inline-block; /* Button style */
+  padding: 0.75rem 1.5rem; /* Button padding */
+  background-color: $blue-600; /* Use one of your defined colors */
+  color: #fff; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+  font-size: $font-size-lg;
+}
+
+.cta-button:hover {
+  background-color: darken($blue-600, 10%); /* Darken on hover */
+}
+
+.hero-info {
+    display: flex;
+    // flex-direction: column;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: $space-lg; // Adjust margin as needed
+    color: $white; // Set your primary color here
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .contact-info {
+        display: flex;
+        gap: $space-xl; // Space between the items
+        // flex-wrap: wrap; // Allow wrapping if screen is too narrow
+        justify-content: center; // Center-align items
+        white-space: nowrap;
+        height: 100%;
+        background-color: $pink-600;
+        padding: 0 $space-lg;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: linear-gradient(to right, $pink-800, $pink-600, $pink-800);
+
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            gap: $space-xs; // Space between icon and text
+            color: $white;
+            font-weight: 500;
+
+            i {
+                color: $pink-200; // Color for Font Awesome icons
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .social-links {
+        display: flex;
+        // background-color: $purple-600;
+        background-image: linear-gradient(to right, $purple-600, $purple-400, $purple-600);
+        gap: $space-sm; // Space between social icons
+        height: 100%;
+        padding: 0 $space-lg;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        overflow: visible;
+        align-items: center;
+
+        a {
+            color: $white;
+            font-size: 1.25rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            background-color: $pink-600;
+            width: 34px;
+            height: 34px;
+            justify-content: center;
+            border-radius: 50%;
+            // transform: scale(1.05);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.04) rotate(4deg);
+            }
+
+            &:first-of-type {
+              background-color: #1877F2;
+            }
+            &:nth-of-type(2) {
+              background-color: #FF0000;
+            }
+        }
+    }
+}
