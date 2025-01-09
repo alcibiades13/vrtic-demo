@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -110,6 +111,18 @@
                                 <img src="images/aktivnosti/aktivnost-3/aktivnost-3-slika-1.jpg" alt="Галерија слика" class="grid-image">
                                 <span class="carousel-overlay">+12</span>
                             </div>
+                            <!-- Lightbox Modal -->
+                            <div class="lightbox" id="lightbox">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Dynamic image slides will be added here -->
+                                    </div>
+                                    <!-- Navigation buttons -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <button class="close-lightbox" id="closeLightbox">✕</button>
+                            </div>
                         </div>
 
                         <!-- Social sharing -->
@@ -191,5 +204,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

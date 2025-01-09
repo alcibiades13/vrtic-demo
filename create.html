@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predškolska ustanova Milka Dimanić | Početna</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+GYU4hc1M9jOHb1VyN3OvltIAFwIhlfKtOTV0di" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="header">
+    <div class="header-container">
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="{% url 'home' %}">Почетна</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">О установи</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'istorijat' %}">Историјат</a></li>
+                        <li><a href="{% url 'programi_rada' %}">Програми рада</a></li>
+                        <li><a href="{% url 'organizaciona_struktura' %}">Организациона структура</a></li>
+                        <li><a href="{% url 'pravno_administrativna_sluzba' %}">Службе</a></li>
+                        <li><a href="#">Пројекти</a></li>
+                        <li><a href="#">Стручно усавршавање</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="{% url 'vrtici' %}">Вртићи</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'vrtici' %}">Преглед</a></li>
+                        <li><a href="{% url 'vrtic_decja_radost' %}">Вртић "Дечја радост"</a></li>
+                        <li><a href="{% url 'vrtic_kolibri' %}">Вртић "Колибри"</a></li>
+                        <li><a href="{% url 'vrtic_pcelica' %}">Вртић "Пчелица" Стајковце</a></li>
+                        <li><a href="{% url 'vrtic_lane' %}">Вртић "Лане" Прилепац</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Обавештења за родитеље</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'upis_dece' %}">Упис деце у вртић</a></li>
+                        <li><a href="{% url 'ritam_dana' %}">Ритам дана</a></li>
+                        <li><a href="{% url 'jelovnik' %}">Јеловник</a></li>
+                        <li><a href="{% url 'pravila_ponasanja' %}">Правила понашања</a></li>
+                        <li><a href="#">Актуелне теме</a></li>
+                        <li><a href="{% url 'kucni_red' %}">Кућни ред</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Актуелности</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Документи</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'opsta_dokumenta_ustanove' %}">Општа документа установе</a></li>
+                        <li><a href="{% url 'javne_nabavke' %}">Јавне набавке</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'kontakt' %}">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+    </div>
+    </header>
+
+
+    <main class="content">
+        <section class="activities-page">
+            <div class="container page">
+                <div class="layout">
+                    <!-- Activities Section -->
+                    <div class="main-content article">
+                        <h2 class="form-title">Креирај нови пост</h2>
+                        <form method="post" enctype="multipart/form-data" class="create-form">
+                            <div class="form-group">
+                                <label for="id_title" class="form-label">Наслов</label>
+                                <input type="text" name="title" id="id_title">
+                            </div>
+                            <div class="form-group">
+                                <label for="id_content" class="form-label">Садржај</label>
+                                <textarea name="" col="40" rows="10" id="id_content"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="id_post_type" class="form-label">Тип садржаја</label>
+                                <select name="" id="id_post_type">
+                                    <option value="">Aktuelnost</option>
+                                    <option value="">Vest</option>
+                                </select>
+                            </div>
+                            <h3>Слике</h3>
+                            <div class="form-group">
+                                <label for="id_images" class="form-label">Додај слике</label>
+                                <input 
+                                    type="file" 
+                                    name="images" 
+                                    id="id_images" 
+                                    class="form-control" 
+                                    multiple 
+                                    onchange="previewImages(this)"  
+                                />
+                            </div>
+                            <div id="image-preview-container" class="form-group">
+                                <!-- Ovde će se prikazivati slike nakon selekcije -->
+                            </div>
+                                            
+                            <button type="submit" class="btn btn-submit">Креирај</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-column about">
+                <h3>О нама</h3>
+                <p>Наша предшколска установа нуди безбедно и подстицајно окружење за свако дете, са циљем развоја кроз игру и учење.</p>
+            </div>
+            <div class="footer-column links">
+                <h3>Корисни линкови</h3>
+                <ul>
+                    <li><a href="#">Почетна</a></li>
+                    <li><a href="#">О нама</a></li>
+                    <li><a href="#">Упис</a></li>
+                    <li><a href="#">Контакт</a></li>
+                    <li><a href="#">Најновије вести</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact">
+                <h3>Контакт информације</h3>
+                <p>Адреса: Улица 123, Град</p>
+                <p>Телефон: +381 11 123 456</p>
+                <p>Email: kontakt@vrtic.rs</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/share/mQPBdbyHhA43av6T//share/mQPBdbyHhA43av6T/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://youtube.com/@milkadimanic?si=66PAtHoE2bKmb8n0" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-copyright">
+            <p>&copy; 2024 Предшколска установа "Милка Диманић". Сва права задржана.</p>
+        </div>
+    </footer>
+
+<script src="js/tinymce/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector: '#id_content',
+        plugins: 'link image code',
+        toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | code',
+        menubar: false
+    });
+</script>
+</script>
+</body>
+<script>
+    function previewImages(input) {
+        const container = document.getElementById('image-preview-container');
+        container.innerHTML = ''; // Očisti prethodne prikaze
+        if (input.files) {
+            Array.from(input.files).forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imageWrapper = document.createElement('div');
+                    imageWrapper.classList.add('image-wrapper');
+                    imageWrapper.innerHTML = `
+                        <img src="${e.target.result}" alt="Преглед" class="img-thumbnail mb-2" style="max-width: 150px;">
+                        <div class="form-check">
+                            <input 
+                                type="radio" 
+                                name="main_image" 
+                                value="${index}" 
+                                id="main_image_${index}" 
+                                class="form-check-input"
+                            />
+                            <label for="main_image_${index}" class="form-check-label">Главна слика</label>
+                        </div>
+                    `;
+                    container.appendChild(imageWrapper);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+    }
+    
+</script>
+
+</html>
