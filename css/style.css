@@ -295,6 +295,7 @@ body {
   position: absolute;
   left: 2rem;
   top: 10px;
+  z-index: 5;
 }
 .header .header-logo img {
   height: 80px;
@@ -409,6 +410,7 @@ body {
     align-items: flex-start;
     padding: 2rem 0;
     transition: left 0.25s ease;
+    z-index: 99;
   }
   .header .header-container .header-nav .nav-list {
     flex-direction: column;
@@ -709,6 +711,9 @@ body {
   .hero-title, .hero-subtext {
     font-size: 2rem;
     text-align: center;
+  }
+  .hero-title {
+    font-size: 1.5rem;
   }
   .hero-info {
     position: relative;
