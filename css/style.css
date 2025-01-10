@@ -289,6 +289,16 @@ body {
   align-items: center;
   height: 100%;
   padding: 1.5rem;
+  position: relative;
+}
+.header .header-logo {
+  position: absolute;
+  left: 2rem;
+  top: 10px;
+}
+.header .header-logo img {
+  height: 80px;
+  width: 80px;
 }
 .header .header-nav .nav-list {
   display: flex;
@@ -476,6 +486,14 @@ body {
 @media (max-width: 768px) {
   .header {
     height: 80px;
+  }
+  .header .header-logo {
+    left: 1.5rem;
+    top: 10px;
+  }
+  .header .header-logo img {
+    height: 60px;
+    width: 60px;
   }
 }
 .hero {
@@ -2867,9 +2885,13 @@ body {
   }
   .pravila-ponasanja .grid-container {
     flex-direction: column;
+    gap: 0;
   }
   .pravila-ponasanja .grid-container .title {
     font-size: 2rem;
+  }
+  .pravila-ponasanja .grid-container #pravila_za_roditelje {
+    padding-top: 4.5rem;
   }
   .menu-benefits .intro-text, .rules-overview .intro-text {
     margin-bottom: 2rem;
@@ -3026,6 +3048,11 @@ section.working-hours-table {
 .create-form #id_title {
   padding: 8px 15px;
   font-size: 1rem;
+  outline: none;
+  border: 1px solid #597290;
+}
+.create-form #id_title:focus {
+  outline: 1px solid #4b527d;
 }
 .create-form #id_content {
   padding: 15px;
@@ -3038,6 +3065,11 @@ section.working-hours-table {
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
+  outline: none;
+  border: 1px solid #597290;
+}
+.create-form #id_content:focus {
+  outline: 1px solid #4b527d;
 }
 .create-form #id_post_type {
   padding: 8px;
@@ -3100,6 +3132,15 @@ section.working-hours-table {
   background-color: #774862;
 }
 
+@media (max-width: 768px) {
+  .btn-create {
+    transform: none;
+    margin: 1.5rem auto;
+  }
+  .create-form {
+    padding: 1.5rem 0;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
